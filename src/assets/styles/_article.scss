@@ -1,0 +1,99 @@
+.articles {
+  grid-column: 2;
+  grid-row: 1;
+  margin-top: 220px;
+  align-self: flex-start;
+}
+main {
+  margin-inline: auto;
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: var(--max-width);
+}
+.cites {
+  margin-top: 35px;
+  position: relative;
+  width: 100%;
+  border-radius: 50px;
+
+  background-color: var(--achivments-background-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .cite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 106px 227px 53px;
+
+    .cite__number {
+      position: relative;
+      font-family: "DM Serif Display";
+      height: fit-content;
+      bottom: 200px;
+      font-size: 200px;
+      height: 45px;
+      letter-spacing: 0.02em;
+      color: var(--achivement-text-color);
+    }
+    .cite__description {
+      font-family: "Jost";
+      text-wrap: pretty;
+      width: 300px;
+      font-style: italic;
+      text-align: center;
+      font-size: 22px;
+      letter-spacing: 0.01em;
+      color: var(--achivement-text-color);
+    }
+  }
+}
+.tags {
+  grid-row: 1;
+  grid-column: 2;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .tags__name {
+    margin-bottom: 24px;
+    flex: 0 0 100%;
+    font-family: "DM Serif Display";
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+  }
+
+  .tags__element {
+    &.selected {
+      background-color: #4d5053;
+      color: #fff;
+    }
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    padding: 9px 30px;
+    width: fit-content;
+    height: 41px;
+    background-color: var(--achivments-background-color);
+    border-radius: 10px;
+    font-family: "Jost";
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #292f36;
+  }
+}
