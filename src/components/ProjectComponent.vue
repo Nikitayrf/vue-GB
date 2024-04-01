@@ -1,6 +1,6 @@
 <template>
     <div class="project">
-        <img :src="project.img" class="project__img" />
+        <router-link to="/projectDetails"><img :src="project.img" class="project__img" /></router-link>
         <h2 class="project__name">{{ project.name }}</h2>
         <span class="project__tag">{{ project.tag[0] }}</span>
         <ALink />

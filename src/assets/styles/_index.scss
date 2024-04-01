@@ -6,16 +6,15 @@ main {
   .intro {
     width: 1200px;
     height: 760px;
-
     border-radius: 70px;
     padding-left: 52px;
     padding-top: 208px;
     background-image: url(@/assets/head-background.png);
     background-size: contain;
     background-repeat: no-repeat;
+
     .intro__name {
       font-family: "DM Serif Display", sans-serif;
-
       font-size: 65px;
       line-height: 125%;
       color: #292f36;
@@ -25,7 +24,6 @@ main {
     }
     .intro__description {
       font-family: "Jost";
-
       font-size: 22px;
       line-height: 150%;
       letter-spacing: 0.01em;
@@ -33,12 +31,14 @@ main {
       width: 434px;
     }
     a {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 21px;
       font-family: "Jost";
-      text-align: center;
       font-size: 18px;
       line-height: 75px;
+      font-weight: 600;
 
       color: #fff;
       border-radius: 18px;

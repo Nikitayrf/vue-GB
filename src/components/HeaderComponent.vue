@@ -13,15 +13,6 @@
 <script>
 export default {
     name: 'HeaderComponent',
-    props: {
-
-    },
-    data() {
-        return {
-            logoImg: '/logo.png'
-        }
-    }
-
 }
 </script>
 <style lang="scss">
